@@ -1,0 +1,69 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+      <!-- Corrected paths -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script defer src="tictaktoe.js"></script>
+  
+
+
+    <title> Tic Tac Toe Game</title>
+
+
+</head>
+<body>
+
+
+        <div><h3>JavaScript Tic-Tac-Toe Game</h3></div>
+        <div id="game-message"><p>X's Turn</p></div>
+
+
+        <div class="board-container">
+            <div class="boards" data-index="0"></div>
+            <div class="boards" data-index="1"></div>
+            <div class="boards" data-index="2"></div>
+            <div class="boards" data-index="3"></div>
+            <div class="boards" data-index="4"></div>
+            <div class="boards" data-index="5"></div>
+            <div class="boards" data-index="6"></div>
+            <div class="boards" data-index="7"></div>
+            <div class="boards" data-index="8"></div>
+
+        </div>
+
+
+        <div><button id="reset-btn">Reset Game</button></div>
+
+
+        <dialog class="names-dialog">
+             <form>
+                <p>Enter Player Names:</p>
+                <label>Player X: <input type="text" id="name1" required></label>
+                <label>Player O: <input type="text" id="name2" required></label>
+                <button type="submit">Start Game</button>
+             </form>
+
+        </dialog>
+
+
+        <dialog class="result-dialog">
+            <h1 id="winner-message"></h1>
+            <button onclick="closeDialog()">OK</button>
+        </dialog>
+
+
+
+
+
+    
+
+    
+</body>
+</html>
